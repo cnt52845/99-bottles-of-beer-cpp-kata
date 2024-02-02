@@ -36,8 +36,6 @@ as an **array of strings** where each string represents a line of the song:
 > No more bottles of beer on the wall, no more bottles of beer.</br>
 > Go to the store and buy some more, 99 bottles of beer on the wall.
  
-This is a 99-bottles-of-beer repository for clean code katas in C++17 using GTest.
-
 ## Usage
 
 You can import this project into [Replit](https://replit.com), and it will
