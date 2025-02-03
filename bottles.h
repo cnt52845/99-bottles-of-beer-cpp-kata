@@ -6,10 +6,9 @@ public:
     static std::vector<std::string> song()
     {
         std::vector<std::string> song;
-        int                      bottle_count = 99;
-        add_verse(song, bottle_count);
-        bottle_count--;
-        add_verse(song, bottle_count);
+        for (int bottle_count = max_bottles; bottle_count >= 2; bottle_count--) {
+            add_verse(song, bottle_count);
+        }
         return song;
     }
 
@@ -21,4 +20,6 @@ private:
         song.push_back("Take one down and pass it around, " + std::to_string(bottle_count - 1) +
                        " bottles of beer on the wall.");
     }
+
+    static const int max_bottles = 99;
 };

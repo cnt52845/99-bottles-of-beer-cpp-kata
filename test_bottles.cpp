@@ -34,8 +34,7 @@ std::vector<std::string> BottlesTest::song;
 
 TEST_F(BottlesTest, Song)
 {
-    int verse = 0;
-    test_verse(verse);
-    verse++;
-    test_verse(verse);
+    for (int verse = 0; verse <= max_verse - 2; verse++) {
+        test_verse(verse);
+    }
 }
