@@ -6,8 +6,10 @@ public:
     static std::vector<std::string> song()
     {
         std::vector<std::string> song;
-        add_verse(song, 99);
-        add_verse(song, 98);
+        int                      bottle_count = 99;
+        add_verse(song, bottle_count);
+        bottle_count--;
+        add_verse(song, bottle_count);
         return song;
     }
 
